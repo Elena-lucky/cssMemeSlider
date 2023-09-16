@@ -46,8 +46,8 @@ body {
 }
 
 .slides img {
-    width: 50vw;
-    height: 60vh;
+    width: auto;
+    height: 80%;
 }
 
 .slides h2 {
@@ -71,19 +71,19 @@ body {
 }
 
 #slide2:checked ~ .slider > .slide2 {
-    margin-top: -36rem;
+    margin-top: -37.5rem;
 }
 
 #slide3:checked ~ .slider > .slide3 {
-    margin-top: -72rem;
+    margin-top: -75rem;
 }
 
 #slide4:checked ~ .slider > .slide4 {
-    margin-top: -107.5rem;
+    margin-top: -112.5rem;
 }
 
 #slide5:checked ~ .slider > .slide5 {
-    margin-top: -143rem;
+    margin-top: -150rem;
 }
 
 .wrapper > input {
@@ -91,7 +91,7 @@ body {
 }
 
 .wrapper .controls {
-	margin-top: -5%;
+	margin-top: -7%;
     margin-left: 62%;
 }
 
@@ -140,3 +140,61 @@ body {
     cursor: pointer;
     color: black;
   }
+
+@media screen and (max-width: 1023px) {
+    html {
+       overflow-x: hidden;
+        max-width: 1023px;
+    }
+
+    .wrapper .controls {
+        margin-top: -7.5%;
+        margin-left: 50%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .wrapper .controls {
+        margin-top: -8.5%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .wrapper .controls {
+        margin-top: -19%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #slide2:checked ~ .slider > .slide2 {
+        margin-top: -38.5rem;
+    }
+    
+    #slide3:checked ~ .slider > .slide3 {
+        margin-top: -77rem;
+    }
+    
+    #slide4:checked ~ .slider > .slide4 {
+        margin-top: -116rem;
+    }
+    
+    #slide5:checked ~ .slider > .slide5 {
+        margin-top: -154.5rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .wrapper  {
+        width: 100vw;
+    }
+
+    .wrapper .controls {
+        margin-top: -14%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .controls {
+        margin-top: -17%;
+    }
+}
